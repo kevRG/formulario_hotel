@@ -194,12 +194,6 @@ input[type="date"] {
     /* min-height: 48px; */
 }
 
-/* * TRUCO ADICIONAL:
- * Cuando quitas la apariencia nativa, Safari a veces
- * ya no muestra el "dd/mm/aaaa" en gris.
- * * Esto simula ese color de placeholder
- * cuando el campo está vacío (ya que es 'required').
- */
 input[type="date"]:invalid {
     color: #757575; /* Un color gris de placeholder */
 }
