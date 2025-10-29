@@ -49,7 +49,7 @@ input[type="number"],
 select {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(blue, 10%, pink);
+    /*background: linear-gradient(blue, 10%, pink);*/
     border: 1px solid #4F1A10;
     border-radius: 8px;
     font-family: 'Poppins', sans-serif; /* Heredar la fuente */
