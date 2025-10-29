@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NET Wellness - Registro</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<form id="hotelForm">
+    <h2>Registro de Interés</h2>
+
+    <div class="form-group">
+        <label for="fecha">Fecha de visita:</label>
+        <input type="date" id="fecha" name="fecha" required>
+    </div>
+
+    <div class="form-group">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+    </div>
+
+    <div class="form-group">
+        <label for="escuela">Escuela de procedencia:</label>
+        <input type="text" id="escuela" name="escuela" required>
+    </div>
+
+    <div class="form-group">
+        <label for="semestre">Semestre en curso:</label>
+        <select id="semestre" name="semestre" required>
+            <option value="" disabled selected>Selecciona un semestre</option>
+            <option value="1">1er Semestre</option>
+            <option value="2">2do Semestre</option>
+            <option value="3">3er Semestre</option>
+            <option value="4">4to Semestre</option>
+            <option value="5">5to Semestre</option>
+            <option value="6">6to Semestre</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required min="1" max="99">
+    </div>
+
+    <fieldset class="form-group">
+        <legend>Área de interés:</legend>
+        <p style="font-size: 0.9em; margin-top: -10px; margin-bottom: 15px; color: #555;">(Puedes marcar varias opciones)</p>
+
+        <fieldset class="sub-fieldset">
+            <legend class="sub-legend">Ingenierías</legend>
+            <div class="checkbox-option">
+                <input type="checkbox" id="software" name="areaInteres" value="Software">
+                <label for="software">Software</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" id="seguridad" name="areaInteres" value="Seguridad Informática y Redes">
+                <label for="seguridad">Seguridad Informática y Redes</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" id="industrial" name="areaInteres" value="Industrial y Rentabilidad de Negocios">
+                <label for="industrial">Industrial y Rentabilidad de Negocios</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" id="mecatronica" name="areaInteres" value="Mecatrónica">
+                <label for="mecatronica">Mecatrónica</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" id="diseno_industrial" name="areaInteres" value="Diseño Industrial">
+                <label for="diseno_industrial">Diseño Industrial</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="sub-fieldset">
+            <legend class="sub-legend">Arte y Humanidades</legend>
+            <div class="checkbox-option">
+                <input type="checkbox" id="moda" name="areaInteres" value="Diseño y Negocios de la Moda">
+                <label for="moda">Diseño y Negocios de la Moda</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" id="digital" name="areaInteres" value="Diseño Digital">
+                <label for="digital">Diseño Digital</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" id="rrpp" name="areaInteres" value="Imagen y Relaciones Públicas">
+                <label for="rrpp">Imagen y Relaciones Públicas</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" id="multimedia" name="areaInteres" value="Comunicación y Multimedia">
+                <label for="multimedia">Comunicación y Multimedia</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" id="arquitectura" name="areaInteres" value="Arquitectura e Interiorismo">
+                <label for="arquitectura">Arquitectura e Interiorismo</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="sub-fieldset">
+            <legend class="sub-legend">Negocios</legend>
+            <div class="checkbox-option">
+                <input type="checkbox" id="admin" name="areaInteres" value="Administración e Innovación de Negocios">
+                <label for="admin">Administración e Innovación de Negocios</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" id="finanzas" name="areaInteres" value="Finanzas, Banca e Inversiones Estratégicas">
+                <label for="finanzas">Finanzas, Banca e Inversiones Estratégicas</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" id="mercadotecnia" name="areaInteres" value="Mercadotecnia">
+                <label for="mercadotecnia">Mercadotecnia</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="sub-fieldset">
+            <legend class="sub-legend">Ciencias Sociales</legend>
+            <div class="checkbox-option">
+                <input type="checkbox" id="lenguas" name="areaInteres" value="Lenguas Extranjeras">
+                <label for="lenguas">Lenguas Extranjeras</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" id="turismo" name="areaInteres" value="Negocios Turísticos">
+                <label for="turismo">Negocios Turísticos</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="sub-fieldset">
+            <legend class="sub-legend">Comercio y Derecho</legend>
+            <div class="checkbox-option">
+                <input type="checkbox" id="comercio" name="areaInteres" value="Comercio Exterior y Derecho Aduanero">
+                <label for="comercio">Comercio Exterior y Derecho Aduanero</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" id="derecho" name="areaInteres" value="Derecho">
+                <label for="derecho">Derecho</label>
+            </div>
+        </fieldset>
+    </fieldset>
+
+    <p id="form-status" aria-live="polite"></p>
+
+    <button type="submit" id="submit-btn">Enviar</button>
+</form>
+
+<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* Buena práctica para el manejo de tamaños */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Asegúrate de importar esta fuente si la usas */
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+form {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+}
+
+/* Agrupador para cada par de etiqueta-campo */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilo de las etiquetas */
+label, legend {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600; /* Un poco más de énfasis */
+    color: #555;
+}
+
+/* Estilo unificado para campos de entrada */
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(blue, 10%, pink);
+    border: 1px solid #4F1A10;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif; /* Heredar la fuente */
+    font-size: 1rem;
+}
+
+/* Estilos para el grupo de checkboxes */
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-option label {
+    margin-bottom: 0; /* Anular el margen de la etiqueta principal */
+    font-weight: 400; /* Peso normal para opciones */
+    color: #333;
+    margin-left: 8px;
+}
+
+.checkbox-option input[type="checkbox"] {
+    width: auto; /* Dejar que el checkbox tenga su tamaño natural */
+}
+
+/* Estilos del botón */
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Estilo para el botón deshabilitado */
+button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+/* Estilos para los mensajes de estado */
+#form-status {
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 0;
+}
+#form-status:empty {
+    margin: 0;
+}
+
+/* Estilos para los sub-grupos de checkboxes */
+.sub-fieldset {
+    border: 1px solid #e0e0e0; /* Borde más suave */
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+
+.sub-legend {
+    font-size: 1em; /* Tamaño de fuente más pequeño para el subtítulo */
+    font-weight: 600;
+    color: #0056b3; /* Color azul para destacar la categoría */
+    padding: 0 5px; /* Espaciado para que el borde no lo atraviese */
+}
+
+
