@@ -8,6 +8,7 @@
 </head>
 <body>
 <form id="hotelForm">
+    <input type="hidden" name="formId" value="registroHotel">
     <h2>Registro de Interés</h2>
 
     <div class="form-group">
@@ -46,6 +47,18 @@
     <fieldset class="form-group">
         <legend>Área de interés:</legend>
         <p style="font-size: 0.9em; margin-top: -10px; margin-bottom: 15px; color: #555;">(Puedes marcar varias opciones)</p>
+
+        <fieldset class="sub-fieldset">
+            <legend class="sub-legend">Ciencias Sociales</legend>
+            <div class="checkbox-option">
+                <input type="checkbox" id="lenguas" name="areaInteres" value="Lenguas Extranjeras">
+                <label for="lenguas">Lenguas Extranjeras</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" id="turismo" name="areaInteres" value="Negocios Turísticos">
+                <label for="turismo">Negocios Turísticos</label>
+            </div>
+        </fieldset>
 
         <fieldset class="sub-fieldset">
             <legend class="sub-legend">Ingenierías</legend>
@@ -108,18 +121,6 @@
             <div class="checkbox-option">
                 <input type="checkbox" id="mercadotecnia" name="areaInteres" value="Mercadotecnia">
                 <label for="mercadotecnia">Mercadotecnia</label>
-            </div>
-        </fieldset>
-
-        <fieldset class="sub-fieldset">
-            <legend class="sub-legend">Ciencias Sociales</legend>
-            <div class="checkbox-option">
-                <input type="checkbox" id="lenguas" name="areaInteres" value="Lenguas Extranjeras">
-                <label for="lenguas">Lenguas Extranjeras</label>
-            </div>
-            <div class="checkbox-option">
-                <input type="checkbox" id="turismo" name="areaInteres" value="Negocios Turísticos">
-                <label for="turismo">Negocios Turísticos</label>
             </div>
         </fieldset>
 
