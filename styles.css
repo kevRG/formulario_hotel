@@ -129,4 +129,46 @@ button:disabled {
     padding: 0 5px; /* Espaciado para que el borde no lo atraviese */
 }
 
+/* --- Media Query para Móviles --- */
+/* Estos estilos se aplicarán en pantallas de 600px o menos */
+
+@media (max-width: 600px) {
+
+    body {
+        /* Reducimos el relleno del body para dar más espacio al formulario */
+        padding: 10px;
+    }
+
+    form {
+        /* Hacemos que el formulario ocupe casi todo el ancho */
+        max-width: 100%;
+        width: 100%;
+        /* Reducimos el relleno interno para que quepa más contenido */
+        padding: 20px 15px;
+        margin: 10px 0;
+    }
+
+    h2 {
+        /* (Opcional) Reducir un poco el título */
+        font-size: 1.5rem;
+    }
+
+    /* Ajustamos el padding de los campos para que no se sientan apretados */
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    select {
+        padding: 10px;
+    }
+
+    button {
+        /* (Opcional) Un poco menos de padding en el botón */
+        padding: 10px 15px;
+    }
+
+    /* (Opcional) Quitar relleno a los grupos de checkboxes */
+    .sub-fieldset {
+        padding: 10px;
+    }
+}
 

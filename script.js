@@ -1,5 +1,5 @@
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxE4iNmeH3nxYSx20p7U3DurBlm5P_sh8U850vGkSNDb4ckna6zX8lHKuqxV_PVE9BKRw/exec';
-const form = document.getElementById('HotelFormulario');
+const form = document.getElementById('hotelForm');
 const submitBtn = document.getElementById('submit-btn');
 const statusEl = document.getElementById('form-status');
 
