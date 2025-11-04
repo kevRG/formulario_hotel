@@ -23,14 +23,12 @@ form.addEventListener('submit', e => {
     formData.set('areaInteres', areas.join(', '));
 
     // 5. Enviar como FormData (NO como JSON)
-    // Esto es mucho más compatible con Google Apps Script.
-    // NO se debe establecer el 'Content-Type', el navegador lo hace solo.
     fetch(scriptURL, {
         method: 'POST',
         body: formData
     })
         .then(response => {
-            // Asumimos que una respuesta 'ok' es éxito
+            // Una respuesta 'ok' es éxito
             if (response.ok) {
                 statusEl.textContent = '✅ Información enviada correctamente';
                 statusEl.style.color = 'green';

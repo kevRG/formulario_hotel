@@ -1,10 +1,10 @@
-/* Buena práctica para el manejo de tamaños */
+/* Manejo de tamaños */
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif; /* Asegúrate de importar esta fuente si la usas */
+    font-family: 'Poppins', sans-serif;
     background: #f7f7f7;
     display: flex;
     justify-content: center;
@@ -38,7 +38,7 @@ h2 {
 label, legend {
     display: block;
     margin-bottom: 8px;
-    font-weight: 600; /* Un poco más de énfasis */
+    font-weight: 600;
     color: #555;
 }
 
@@ -52,7 +52,7 @@ select {
     background: linear-gradient(blue, 10%, pink);
     border: 1px solid #4F1A10;
     border-radius: 8px;
-    font-family: 'Poppins', sans-serif; /* Heredar la fuente */
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
 }
 
@@ -70,14 +70,14 @@ fieldset {
 }
 
 .checkbox-option label {
-    margin-bottom: 0; /* Anular el margen de la etiqueta principal */
-    font-weight: 400; /* Peso normal para opciones */
+    margin-bottom: 0;
+    font-weight: 400;
     color: #333;
     margin-left: 8px;
 }
 
 .checkbox-option input[type="checkbox"] {
-    width: auto; /* Dejar que el checkbox tenga su tamaño natural */
+    width: auto;
 }
 
 /* Estilos del botón */
@@ -116,17 +116,17 @@ button:disabled {
 
 /* Estilos para los sub-grupos de checkboxes */
 .sub-fieldset {
-    border: 1px solid #e0e0e0; /* Borde más suave */
+    border: 1px solid #e0e0e0;
     border-radius: 8px;
     padding: 10px 15px;
     margin-bottom: 15px;
 }
 
 .sub-legend {
-    font-size: 1em; /* Tamaño de fuente más pequeño para el subtítulo */
+    font-size: 1em;
     font-weight: 600;
-    color: #0056b3; /* Color azul para destacar la categoría */
-    padding: 0 5px; /* Espaciado para que el borde no lo atraviese */
+    color: #0056b3;
+    padding: 0 5px;
 }
 
 
