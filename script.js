@@ -47,7 +47,7 @@ form.addEventListener('submit', e => {
             // 6. Volver a habilitar el botón
             submitBtn.disabled = false;
 
-            // 7. (Opcional) Borrar el mensaje después de 5 segundos
+            // 7. Borrar el mensaje después de 5 segundos
             setTimeout(() => {
                 statusEl.textContent = '';
             }, 5000);
