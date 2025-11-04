@@ -49,7 +49,7 @@ input[type="number"],
 select {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(blue, 10%, pink);
+    /*background: linear-gradient(blue, 10%, pink);*/
     border: 1px solid #4F1A10;
     border-radius: 8px;
     font-family: 'Poppins', sans-serif;
@@ -129,4 +129,76 @@ button:disabled {
     padding: 0 5px;
 }
 
+/* --- Media Query para Móviles --- */
+/* Estos estilos se aplicarán en pantallas de 600px o menos */
 
+@media (max-width: 600px) {
+
+    body {
+        /* Reducimos el relleno del body para dar más espacio al formulario */
+        padding: 10px;
+    }
+
+    form {
+        /* Hacemos que el formulario ocupe casi todo el ancho */
+        max-width: 100%;
+        width: 100%;
+        /* Reducimos el relleno interno para que quepa más contenido */
+        padding: 20px 15px;
+        margin: 10px 0;
+    }
+
+    h2 {
+        /* (Opcional) Reducir un poco el título */
+        font-size: 1.5rem;
+    }
+
+    /* Ajustamos el padding de los campos para que no se sientan apretados */
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    select {
+        padding: 10px;
+    }
+
+    button {
+        /* (Opcional) Un poco menos de padding en el botón */
+        padding: 10px 15px;
+    }
+
+    /* (Opcional) Quitar relleno a los grupos de checkboxes */
+    .sub-fieldset {
+        padding: 10px;
+    }
+}
+
+/* --- Arreglo para Input de Fecha en iPhone (Safari) --- */
+
+input[type="date"] {
+    /* 1. Le dice a Safari que NO use su estilo nativo */
+    -webkit-appearance: none;
+    appearance: none;
+
+    /* 2. Vuelve a aplicar los estilos que SÍ quieres */
+    /* (Algunos ya los tienes, pero esto asegura que se apliquen) */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+
+    /* 3. (Opcional) A veces Safari necesita una altura
+       explícita para alinearse con los otros campos.
+       Ajusta este valor si es necesario. */
+    /* min-height: 48px; */
+}
+
+input[type="date"]:invalid {
+    color: #757575; /* Un color gris de placeholder */
+}
+
+input[type="date"]:focus,
+input[type="date"]:valid {
+    color: #333; /* El color de texto normal al escribir */
+}
